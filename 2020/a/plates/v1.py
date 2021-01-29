@@ -1,3 +1,5 @@
+# brute force version
+
 def takesum(counters):
     total = 0
     for i, count in enumerate(counters):
