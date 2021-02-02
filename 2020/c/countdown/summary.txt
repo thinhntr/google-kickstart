@@ -1,9 +1,9 @@
-RESULT FOR v1.py
+RESULT FOR v2.py
 
-TOTAL TEST(s): 1
+TOTAL TEST(s): 2
 
-1 PASS TEST(s)
-1 
+2 PASS TEST(s)
+1 2 
 
 0 FAILED TEST(s)
 
