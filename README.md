@@ -15,6 +15,7 @@ My solutions for google kick start coding competition
     - [Round E](https://github.com/thinhntr/google-kickstart/tree/main/2020/e)
         - [Longest arithmetic](https://github.com/thinhntr/google-kickstart/tree/main/2020/e/longest-arithmetic)
     - [Round F](https://github.com/thinhntr/google-kickstart/tree/main/2020/f)
+        - [Atm queue](https://github.com/thinhntr/google-kickstart/tree/main/2020/f/atm-queue)
     - [Round G](https://github.com/thinhntr/google-kickstart/tree/main/2020/g)
     - [Round H](https://github.com/thinhntr/google-kickstart/tree/main/2020/h)
     
