@@ -1,20 +1,20 @@
-def printRes(order, result):
+def print_result(order, result):
     print(f"Case #{order + 1}: {result}")
 
 def readln():
     return input().strip()
     
-def readInt():
+def read_int():
     return int(input().strip())
 
-def readInts():
+def read_ints():
     return list(map(int, input().split()))
 
 def solve(order):
-    printRes(order)
+    print_result(order, "#TODO")
 
 if __name__ == "__main__":
 
-    T = readInt()
+    T = read_int()
     for t in range(T):
         solve(t)
