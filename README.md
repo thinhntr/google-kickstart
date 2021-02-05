@@ -1,6 +1,10 @@
 # google-kickstart
 My solutions for google kick start coding competition
 
+Tested using code-judge-simulator
+
+[https://github.com/thinhntr/code-judge-simulator](https://github.com/thinhntr/code-judge-simulator)
+
 # Table of contents
 - [2020](https://github.com/thinhntr/google-kickstart/blob/main/2020)
     - [Round A](https://github.com/thinhntr/google-kickstart/blob/main/2020/a)
