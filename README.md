@@ -17,5 +17,7 @@ My solutions for google kick start coding competition
     - [Round F](https://github.com/thinhntr/google-kickstart/tree/main/2020/f)
         - [Atm queue](https://github.com/thinhntr/google-kickstart/tree/main/2020/f/atm-queue)
     - [Round G](https://github.com/thinhntr/google-kickstart/tree/main/2020/g)
+        - [Kick start](https://github.com/thinhntr/google-kickstart/tree/main/2020/g/kick-start)
     - [Round H](https://github.com/thinhntr/google-kickstart/tree/main/2020/h)
+        - [Retype](https://github.com/thinhntr/google-kickstart/tree/main/2020/h/retype)
     
