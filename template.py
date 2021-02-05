@@ -3,6 +3,7 @@ def printRes(order, result):
 
 def readln():
     return input().strip()
+    
 def readInt():
     return int(input().strip())
 
