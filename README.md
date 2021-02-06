@@ -25,7 +25,7 @@ Tested using code-judge-simulator
         - [Kick start](https://github.com/thinhntr/google-kickstart/tree/main/2020/g/kick-start)
     - [Round H](https://github.com/thinhntr/google-kickstart/tree/main/2020/h)
         - [Retype](https://github.com/thinhntr/google-kickstart/tree/main/2020/h/retype)
- - [2020](https://github.com/thinhntr/google-kickstart/blob/main/2019)
+ - [2019](https://github.com/thinhntr/google-kickstart/blob/main/2019)
     - [Round A](https://github.com/thinhntr/google-kickstart/blob/main/2019/a)
         - [Training](https://github.com/thinhntr/google-kickstart/blob/main/2019/a/training)
 
