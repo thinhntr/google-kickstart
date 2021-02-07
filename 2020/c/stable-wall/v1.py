@@ -27,17 +27,12 @@ def insert_link(adj_mat, start, end):
     start_idx = idx_of(start)
 
     if start_idx == end_idx:
-        return True
-
-    if adj_mat[end_idx][start_idx] == 1:
-        return False
+        return
 
     if adj_mat[start_idx][end_idx] == 0:
         adj_mat[start_idx][end_idx] = 1
         adj_mat[start_idx][-1] += 1
         adj_mat[-1][end_idx] += 1
-
-    return True
 
 
 def solve(order):
@@ -53,13 +48,21 @@ def solve(order):
 
     for col in range(C):
         prev_node = S[-1][col]
+        unvisited.add(idx_of(prev_node))
+        added_node = set()
         for row in reversed(range(R)):
             node = S[row][col]
-            unvisited.add(idx_of(node))
-            is_valid = insert_link(adj_mat, prev_node, node)
-            prev_node = node
+            if node == prev_node:
+                continue
+            added_node.add(prev_node)
+            if node in added_node:
+                is_valid = False
             if not is_valid:
                 break
+            unvisited.add(idx_of(node))
+            insert_link(adj_mat, prev_node, node)
+            prev_node = node
+            
         if not is_valid:
             break
 
