@@ -14,6 +14,9 @@ def read_ints():
     return list(map(int, input().split()))
 
 
+from collections import deque
+
+
 def idx_of(key):
     return ord(key) - ord("A")
 
@@ -23,11 +26,11 @@ def key_of(idx):
 
 
 def insert_link(adj_mat, start, end):
+    if start == end:
+        return 
+
     end_idx = idx_of(end)
     start_idx = idx_of(start)
-
-    if start_idx == end_idx:
-        return
 
     if adj_mat[start_idx][end_idx] == 0:
         adj_mat[start_idx][end_idx] = 1
@@ -43,58 +46,51 @@ def solve(order):
         S.append(readln())
 
     adj_mat = [[0 for _ in range(27)] for _ in range(27)]
-    unvisited = set()
-    is_valid = True
+    nodes = set()
 
     for col in range(C):
-        prev_node = S[-1][col]
-        unvisited.add(idx_of(prev_node))
-        added_node = set()
+        prev_key = S[-1][col]
         for row in reversed(range(R)):
-            node = S[row][col]
-            if node == prev_node:
-                continue
-            added_node.add(prev_node)
-            if node in added_node:
-                is_valid = False
-            if not is_valid:
-                break
-            unvisited.add(idx_of(node))
-            insert_link(adj_mat, prev_node, node)
-            prev_node = node
+            curr_key = S[row][col]
+            insert_link(adj_mat, prev_key, curr_key)
+            prev_key = curr_key
+
+            curr_node = idx_of(curr_key)            
+            nodes.add(curr_node)
             
-        if not is_valid:
-            break
 
-    if not is_valid:
-        print_result(order, -1)
-        return
-
-    
     trace = []
-    node = -1
+    in_degrees = dict()
+    queue = deque()
+    visited = set()
 
-    while len(unvisited) != 0:
-        if node == -1:
-            for i in unvisited:
-                if adj_mat[-1][i] == 0:
-                    node = i
-                    break
-        
-        if node != -1:
-            unvisited.remove(node)
-            trace.append(key_of(node))
+    for node in nodes:
+        in_degrees[node] = adj_mat[-1][node]  # store the in-degree of current node
+        if in_degrees[node] == 0:
+            queue.append(node)
+            visited.add(node)
+
+    while len(queue) != 0:
+        curr_node = queue.popleft()
+
+        curr_key = key_of(curr_node)
+        trace.append(curr_key)
+
+        for adj_node in range(26):
+            if adj_mat[curr_node][adj_node] == 0:
+                continue
+
+            in_degrees[adj_node] -= 1
             
-        min_in_link = 26
-        min_node = -1
-        for i in unvisited:
-            if adj_mat[node][i] != 0:
-                if adj_mat[-1][i] < min_in_link:
-                    min_in_link = adj_mat[-1][i]
-                    min_node = i
-        node = min_node
+            if in_degrees[adj_node] == 0:
+                queue.append(adj_node)
+            
+            visited.add(adj_node)
 
-    print_result(order, "".join(trace))
+    if len(trace) != len(nodes):
+        print_result(order, -1)
+    else:
+        print_result(order, "".join(trace))
 
 
 if __name__ == "__main__":
