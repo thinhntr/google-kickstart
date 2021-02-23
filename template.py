@@ -15,7 +15,7 @@ def readints():
 
 
 def solve(order):
-    print_result(order, "#TODO")
+    printresult(order, "#TODO")
 
 
 if __name__ == "__main__":
