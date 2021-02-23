@@ -21,6 +21,7 @@ Tested using code-judge-simulator
         - [Alien piano](https://github.com/thinhntr/google-kickstart/tree/main/2020/d/alien-piano)
     - [Round E](https://github.com/thinhntr/google-kickstart/tree/main/2020/e)
         - [Longest arithmetic](https://github.com/thinhntr/google-kickstart/tree/main/2020/e/longest-arithmetic)
+        - [High buildings](https://github.com/thinhntr/google-kickstart/tree/main/2020/e/high-buildings)
     - [Round F](https://github.com/thinhntr/google-kickstart/tree/main/2020/f)
         - [Atm queue](https://github.com/thinhntr/google-kickstart/tree/main/2020/f/atm-queue)
     - [Round G](https://github.com/thinhntr/google-kickstart/tree/main/2020/g)
