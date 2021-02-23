@@ -15,6 +15,8 @@ Tested using code-judge-simulator
         - [Bus routes](https://github.com/thinhntr/google-kickstart/blob/main/2020/b/bus-routes)
     - [Round C](https://github.com/thinhntr/google-kickstart/tree/main/2020/c)
         - [Countdown](https://github.com/thinhntr/google-kickstart/tree/main/2020/c/countdown)
+        - [Stable wall](https://github.com/thinhntr/google-kickstart/tree/main/2020/c/stable-wall)
+
     - [Round D](https://github.com/thinhntr/google-kickstart/tree/main/2020/d)
         - [Record breaker](https://github.com/thinhntr/google-kickstart/tree/main/2020/d/record-breaker)
     - [Round E](https://github.com/thinhntr/google-kickstart/tree/main/2020/e)
