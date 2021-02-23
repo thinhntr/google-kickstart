@@ -1,4 +1,4 @@
-def print_result(order, result):
+def printresult(order, result):
     print(f"Case #{order + 1}: {result}")
 
 
@@ -6,11 +6,11 @@ def readln():
     return input().strip()
 
 
-def read_int():
+def readint():
     return int(input().strip())
 
 
-def read_ints():
+def readints():
     return list(map(int, input().split()))
 
 
@@ -19,6 +19,6 @@ def solve(order):
 
 
 if __name__ == "__main__":
-    T = read_int()
+    T = readint()
     for t in range(T):
         solve(t)
