@@ -16,9 +16,9 @@ Tested using code-judge-simulator
     - [Round C](https://github.com/thinhntr/google-kickstart/tree/main/2020/c)
         - [Countdown](https://github.com/thinhntr/google-kickstart/tree/main/2020/c/countdown)
         - [Stable wall](https://github.com/thinhntr/google-kickstart/tree/main/2020/c/stable-wall)
-
     - [Round D](https://github.com/thinhntr/google-kickstart/tree/main/2020/d)
         - [Record breaker](https://github.com/thinhntr/google-kickstart/tree/main/2020/d/record-breaker)
+        - [Alien piano](https://github.com/thinhntr/google-kickstart/tree/main/2020/d/alien-piano)
     - [Round E](https://github.com/thinhntr/google-kickstart/tree/main/2020/e)
         - [Longest arithmetic](https://github.com/thinhntr/google-kickstart/tree/main/2020/e/longest-arithmetic)
     - [Round F](https://github.com/thinhntr/google-kickstart/tree/main/2020/f)
