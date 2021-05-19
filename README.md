@@ -2,7 +2,7 @@
 
 My solutions for google kick start coding competition
 
-Tested using code-judge-simulator
+My testing tool (for `python` files)
 
 [https://github.com/thinhntr/code-judge-simulator](https://github.com/thinhntr/code-judge-simulator)
 
@@ -12,8 +12,8 @@ Tested using code-judge-simulator
 
   - [Round A](https://github.com/thinhntr/google-kickstart/blob/main/2021/a)
     - [K-Goodness String](https://github.com/thinhntr/google-kickstart/blob/main/2021/a/k-goodness-string)
-  - [Round A](https://github.com/thinhntr/google-kickstart/blob/main/2021/b)
-    - [K-Goodness String](https://github.com/thinhntr/google-kickstart/blob/main/2021/b/increasing-substring)
+  - [Round B](https://github.com/thinhntr/google-kickstart/blob/main/2021/b)
+    - [Increasing Substring](https://github.com/thinhntr/google-kickstart/blob/main/2021/b/increasing-substring)
 
 - [2020](https://github.com/thinhntr/google-kickstart/blob/main/2020)
 
