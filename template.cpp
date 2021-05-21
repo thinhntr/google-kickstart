@@ -6,19 +6,17 @@ typedef vector<vector<int>> vvt;
 typedef vector<string> vs;
 
 #define repeat(T) for (int ct = 0; ct < T; ++ct)
-
+#define fore(ar, e) for (int i = 0; i < e; ++i)
+#define forse(ar, s, e) for (int i = s; i < e; ++i)
 #define map(ar, dr, f)                  \
     for (int i = 0; i < dr.size(); ++i) \
         dr[i] = f(ar[i]);
-
 #define readint(s) \
     int s;         \
     cin >> s;
-
 #define readstr(s) \
     string s;      \
     getline(cin >> ws, s);
-
 #define readints(ar, S)         \
     auto ar = vt();             \
     for (int i = 0; i < S; ++i) \
@@ -43,8 +41,6 @@ void solve(int order)
     cout << "Case #" << order + 1 << ": "
          << "result";
 }
-
-int ctoi(char c) { return int(c); }
 
 int main()
 {
