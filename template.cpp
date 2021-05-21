@@ -6,8 +6,8 @@ typedef vector<vector<int>> vvt;
 typedef vector<string> vs;
 
 #define repeat(T) for (int ct = 0; ct < T; ++ct)
-#define fore(ar, e) for (int i = 0; i < e; ++i)
-#define forse(ar, s, e) for (int i = s; i < e; ++i)
+#define forrange(s, e) for (int i = s; i < e; ++i)
+#define forrrange(s, e) for (int i = s; i > e; --i)
 #define map(ar, dr, f)                  \
     for (int i = 0; i < dr.size(); ++i) \
         dr[i] = f(ar[i]);
@@ -25,7 +25,7 @@ typedef vector<string> vs;
         cin >> e;               \
         ar.push_back(e);        \
     }
-
+#define prs(result) cout << "Case #" << order << ": " << result << endl;
 template <class T>
 void printarr(const vector<T> &ar)
 {
@@ -38,13 +38,12 @@ void printarr(const vector<T> &ar)
 
 void solve(int order)
 {
-    cout << "Case #" << order + 1 << ": "
-         << "result";
+    prs("result")
 }
 
 int main()
 {
     readint(T);
-    repeat(T) solve(ct);
+    repeat(T) solve(ct + 1);
     return 0;
 }
