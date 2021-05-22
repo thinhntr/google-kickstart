@@ -50,15 +50,13 @@ void solve(int order)
 
     D[0] = A[1] - A[0];
     count[0] = 1;
-
     int maxl = 0;
 
     forrange(1, N)
     {
         D[i] = A[i] - A[i - 1];
         count[i] = (D[i] != D[i - 1]) ? 1 : count[i - 1] + 1;
-        if (maxl < count[i])
-            maxl = count[i];
+        maxl = max(maxl, count[i]);
     }
 
     forrrange(N - 1, -1)
@@ -80,7 +78,7 @@ void solve(int order)
             if (A[i - 3] + D[i - 3] * 2 == A[i - 1])
             {
                 type2 = currentLength + count[i - 3] + 2;
-                if (count[i - 3] == i + 1)
+                if (count[i - 3] < i - 2)
                     ++type2;
             }
         }
