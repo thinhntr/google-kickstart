@@ -66,31 +66,35 @@ void solve(int order)
             break;
         }
         int currentLength = count[i];
-        int type1 = currentLength + 2;
         while (count[i] > 1)
         {
             --i;
-        };
+        }
+        int type1 = currentLength + 2;
         int type2 = 0;
         int type3 = 0;
-        if (i - 3 >= 0 && D[i - 3] == D[i])
+        int type4 = 0;
+        if ((i - 3 >= 0) && (D[i - 3] == D[i]) && (A[i - 3] + D[i - 3] * 2 == A[i - 1]))
         {
-            if (A[i - 3] + D[i - 3] * 2 == A[i - 1])
-            {
-                type2 = currentLength + count[i - 3] + 2;
-                if (count[i - 3] < i - 2)
-                    ++type2;
-            }
+            type2 = currentLength + count[i - 3] + 2;
+            if (count[i - 3] < i - 3 + 1)
+                ++type2;
         }
-        else if (i == N - 1 || i < N - 1 && count[i + 1] == 1)
+        if ((i == N - 1) || (i < N - 1) && (count[i + 1] == 1) && (D[i - 1] == D[i - 2]))
         {
-            if (D[i - 1] == D[i - 2])
-            {
-                type3 = count[i - 1] + 1;
-            }
+            type3 = count[i - 1] + 1;
+            if (count[i - 1] < i - 1 + 1)
+                ++type3;
         }
-        maxl = max(max(max(maxl, type1), type2), type3);
+        if (i - 2 >= 0 and A[i - 2] + D[i - 2] * 2 == A[i])
+        {
+            type4 = count[i - 2] + 2;
+            if (count[i - 2] < i - 2 + 1)
+                ++type4;
+        }
+        maxl = max(max(max(max(maxl, type1), type2), type3), type4);
     }
+
     prs(maxl);
 }
 
