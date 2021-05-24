@@ -5,9 +5,9 @@ typedef vector<int> vt;
 typedef vector<vector<int>> vvt;
 typedef vector<string> vs;
 
-#define repeat(T) for (int ct = 0; ct < T; ++ct)
-#define forrange(s, e) for (int i = s; i < e; ++i)
-#define forrrange(s, e) for (int i = s; i > e; --i)
+#define repeat(ix, T) for (int ix = 0; ix < T; ++ix)
+#define FOR(ix, s, e) for (int ix = s; ix < e; ++ix)
+#define FORR(ix, s, e) for (int ix = s; ix > e; --ix)
 #define map(ar, dr, f)                  \
     for (int i = 0; i < dr.size(); ++i) \
         dr[i] = f(ar[i]);
@@ -44,6 +44,6 @@ void solve(int order)
 int main()
 {
     readint(T);
-    repeat(T) solve(ct + 1);
+    repeat(ct, T) solve(ct + 1);
     return 0;
 }
