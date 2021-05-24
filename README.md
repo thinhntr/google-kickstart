@@ -2,7 +2,7 @@
 
 My solutions for google kick start coding competition
 
-My testing tool (for `python` files)
+My testing tool (for `python`, `c++` files)
 
 [https://github.com/thinhntr/code-judge-simulator](https://github.com/thinhntr/code-judge-simulator)
 
